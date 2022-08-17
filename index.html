@@ -9,16 +9,18 @@
 
 <body>
     <div class="wrapper">
+        <div class="scroll-up"><span></span></div>
         <header class="header">
             <div class="container">
                 <ul class="header__menu menu menu__burger ">
                     <div class="menu__closed"><span></span></div>
-                    <li class="menu__point menu__point_1">Home</li>
-                    <li class="menu__point menu__point_2">About me</li>
-                    <li class="menu__point menu__point_3">Skills</li>
-                    <li class="menu__point menu__point_4">Portfolio</li>
-                    <li class="menu__point menu__point_5">Contacts</li>
-                    <li class="menu__lang"><span class="span span_1">UA</span> | <span class="span span_2">ENG</span>
+                    <li class="menu__point menu__point_1" data-goto=".header">Home</li>
+                    <li class="menu__point menu__point_2" data-goto=".about">About me</li>
+                    <li class="menu__point menu__point_3" data-goto=".skills">Skills</li>
+                    <li class="menu__point menu__point_4" data-goto=".portfolio">Portfolio</li>
+                    <li class="menu__point menu__point_5" data-goto=".contacts">Contacts</li>
+                    <li class="menu__lang"><span class="span span_1">UA</span> | <span
+                            class="span span_2 active">ENG</span>
                     </li>
                 </ul>
                 <hr class="hr">
@@ -30,7 +32,8 @@
                         <p>UX | UI designer</p>
                         <p>24 years old, Minsk</p>
                     </div>
-                    <div class="header__lang"><span class="span span_1">UA</span> | <span class="span span_2">ENG</span>
+                    <div class="header__lang"><span class="span span_1">UA</span> | <span
+                            class="span span_2 active">ENG</span>
                     </div>
                 </div>
                 <div class="header__slider swiper">
@@ -94,7 +97,7 @@
                 <div class="skills__text">I work in such programs as</div>
                 <div class="skills__items">
                     <div class="skills__item">
-                        <img src="imgs/skills/Adobe Photoshop.png" alt="">
+                        <img src="imgs/skills/Adobe Photoshop.svg" alt="">
                         <p>Adobe
                             Photoshop</p>
                         <div class="skills__item-raiting">
@@ -106,7 +109,7 @@
                         </div>
                     </div>
                     <div class="skills__item">
-                        <img src="imgs/skills/Adobe Illustration.png" alt="">
+                        <img src="imgs/skills/Adobe Illustration.svg" alt="">
                         <p>Adobe
                             Illustrator</p>
                         <div class="skills__item-raiting">
@@ -118,7 +121,7 @@
                         </div>
                     </div>
                     <div class="skills__item">
-                        <img src="imgs/skills/Adobe After Effects.png" alt="">
+                        <img src="imgs/skills/Adobe After Effects.svg" alt="">
                         <p>Adobe
                             After Effects</p>
                         <div class="skills__item-raiting">
@@ -198,20 +201,20 @@
                 <button class="contacts__button">Send message</button>
                 <div class="contacts__social-block">
                     <a class="contacts__social-element-1">
-                        <img src="imgs/contacs/socia-element-2-drop-1.png" alt="" class="el el-1-1">
-                        <img src="imgs/contacs/socia-element-2-drop-2.png" alt="" class="el el-1-2">
-                        <img src="imgs/contacs/socia-element-2-drop-3.png" alt="" class="el el-1-3">
+                        <img src="imgs/contacs/socia-element-2-drop-1.svg" alt="" class="el el-1-1">
+                        <img src="imgs/contacs/socia-element-2-drop-2.svg" alt="" class="el el-1-2">
+                        <img src="imgs/contacs/socia-element-2-drop-3.svg" alt="" class="el el-1-3">
                     </a>
                     <a class="contacts__social-element-2">
-                        <img src="imgs/contacs/socia-element-2.png" alt="">
+                        <img src="imgs/contacs/socia-element-2.svg" alt="">
                     </a>
                     <a class="contacts__social-element-3">
-                        <img src="imgs/contacs/socia-element-3-drop-1.png" alt="" class="el el-3-1">
-                        <img src="imgs/contacs/socia-element-3-drop-2.png" alt="" class="el el-3-2">
-                        <img src="imgs/contacs/socia-element-3-drop-3.png" alt="" class="el el-3-3">
+                        <img src="imgs/contacs/socia-element-3-drop-1.svg" alt="" class="el el-3-1">
+                        <img src="imgs/contacs/socia-element-3-drop-2.svg" alt="" class="el el-3-2">
+                        <img src="imgs/contacs/socia-element-3-drop-3.svg" alt="" class="el el-3-3">
                     </a>
                     <a class="contacts__social-element-4">
-                        <img src="imgs/contacs/socia-element-4.png" alt="">
+                        <img src="imgs/contacs/socia-element-4.svg" alt="">
                     </a>
                 </div>
                 <div class="contacts__describe">

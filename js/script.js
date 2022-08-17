@@ -17,14 +17,13 @@ $(document).ready(function () {
         $('.menu').addClass('active');
         $('.menu__point-burger').addClass('active');
         if (viewport_width < 500) {
+
             $('body').addClass('lock');
-            $('.container').addClass('paddingNone');
+
         }
     });
     for (let i = 1; i < 6; i++) {
         $(`.menu__point_${i}`).click(function () {
-            $(`.menu__point`).removeClass('active');
-            $(`.menu__point_${i}`).addClass('active');
             if (viewport_width < 500) {
                 $('.menu__point-burger').removeClass('active');
                 $('.menu').removeClass('active');
@@ -33,6 +32,12 @@ $(document).ready(function () {
             }
         });
     }
+    $(`.scroll-up`).click(function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
     for (let i = 1; i < 3; i++) {
         $(`.span_${i}`).click(function () {
             $(`.span`).removeClass('active');
@@ -40,5 +45,34 @@ $(document).ready(function () {
 
         });
     }
+    const menuPoints = document.querySelectorAll('.menu__point[data-goto]');
+    if (menuPoints.length > 0) {
+        menuPoints.forEach(menuPoint => {
+            menuPoint.addEventListener("click", (e) => {
+                const menuPoint = e.target;
+                if (menuPoint.dataset.goto && document.querySelector(menuPoint.dataset.goto)) {
+                    const gotoBlock = document.querySelector(menuPoint.dataset.goto);
+                    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.scrollY - 20;
 
+                    window.scrollTo({
+                        top: gotoBlockValue,
+                        behavior: "smooth",
+                    });
+                    e.preventDefault();
+                }
+            })
+        });
+    }
+    $(window).on('wheel', function (e) {
+        let scrollBorder = 800;
+        if (viewport_width < 500) {
+            scrollBorder = 450;
+        }
+            if (scrollY > scrollBorder) {
+                $('.scroll-up').addClass('active');
+            } else {
+                $('.scroll-up').removeClass('active');
+            }
+            console.log(scrollY);
+        });
 })

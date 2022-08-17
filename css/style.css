@@ -242,6 +242,17 @@ hr {
   cursor: pointer;
 }
 
+.menu__point:hover {
+  color: #c7c7c7;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.menu__point:active {
+  color: black;
+  font-size: 20px;
+}
+
 .menu__point-burger {
   display: none;
 }
@@ -299,23 +310,27 @@ hr {
     position: fixed;
     background-color: #fff;
     top: 0px;
-    padding: 60px 26px;
     width: 100%;
-    max-height: 0;
-    min-height: 0;
-    height: 0;
+    max-height: 0px;
     overflow: hidden;
     opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    margin: 0px 0px 0px -10px;
+    visibility: hidden;
   }
   .menu__point {
     font-size: 34px;
     margin: 0px 0px 68px 0px;
   }
   .menu__point_5 {
-    margin: 0px 0px 360px 0px;
+    margin: 0px 0px 60px 0px;
   }
   .menu__point.active {
     color: #000;
+  }
+  .menu__point:active {
+    font-size: 36px;
   }
   .menu__point-burger {
     display: -webkit-box;
@@ -364,8 +379,8 @@ hr {
     display: -ms-flexbox;
     display: flex;
     font-size: 34px;
-    top: 57px;
-    right: 50px;
+    top: 67px;
+    right: 35px;
   }
   .menu__closed span::after {
     content: "";
@@ -398,17 +413,19 @@ hr {
         -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
     font-size: 34px;
-    bottom: -200px;
+    bottom: -60px;
     right: 40px;
   }
   .menu.active {
-    height: 920px;
+    height: 100%;
     max-height: 100%;
     z-index: 2;
     overflow: auto;
     opacity: 1;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    padding: 70px 26px 60px 26px;
+    visibility: visible;
   }
   .header {
     position: relative;
@@ -563,7 +580,7 @@ hr {
 }
 
 .skills__item img {
-  background: url("../imgs/skills/Background.png") 0 0/100% 100% no-repeat;
+  background: url("../imgs/skills/Background.svg") 0 0/100% 100% no-repeat;
   margin: 0px 0px 27px 0px;
 }
 
@@ -585,11 +602,11 @@ hr {
   margin: 0px 8px 0px 0px;
   height: 25px;
   width: 25px;
-  background: url("../imgs/skills/Star.png") 0 0/26px 26px repeat-x;
+  background: url("../imgs/skills/Star.svg") 0 0/26px 26px repeat-x;
 }
 
 .skills__item-raiting p.empty {
-  background: url("../imgs/skills/Star Empty.png") 0 0/26px 26px repeat-x;
+  background: url("../imgs/skills/Star Empty.svg") 0 0/26px 26px repeat-x;
 }
 
 .skills__item-raiting img {
@@ -802,14 +819,14 @@ hr {
 
 .contacts__social-element-1 {
   position: relative;
-  background: url("../imgs/contacs/background.png") 0 0/40px 40px no-repeat;
+  background: url("../imgs/contacs/background.svg") 0 0/40px 40px no-repeat;
   width: 40px;
   height: 40px;
 }
 
 .contacts__social-element-3 {
   position: relative;
-  background: url("../imgs/contacs/background.png") 0 0/40px 40px no-repeat;
+  background: url("../imgs/contacs/background.svg") 0 0/40px 40px no-repeat;
   width: 40px;
   height: 40px;
 }
@@ -860,4 +877,51 @@ hr {
 
 .a {
   color: #000;
+}
+
+.scroll-up {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border: #000 solid 3px;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.scroll-up span:before {
+  content: "";
+  position: fixed;
+  width: 20px;
+  height: 4px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  background-color: #000;
+  bottom: 17.5px;
+  right: 2.5px;
+}
+
+.scroll-up span::after {
+  content: "";
+  position: fixed;
+  width: 20px;
+  height: 4px;
+  bottom: 17.5px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  background-color: #000;
+  right: 17.7px;
+}
+
+.scroll-up.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
