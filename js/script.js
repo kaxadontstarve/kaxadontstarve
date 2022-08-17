@@ -1,6 +1,6 @@
 
 new Swiper('.header__slider', {
-
+    autoPlay: true,
     slidesPerView: 1,
 });
 const viewport_width = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
@@ -63,7 +63,7 @@ $(document).ready(function () {
             })
         });
     }
-    $(window).on('wheel', function (e) {
+    $(window).on('scroll', function (e) {
         let scrollBorder = 800;
         if (viewport_width < 500) {
             scrollBorder = 450;
@@ -73,6 +73,6 @@ $(document).ready(function () {
             } else {
                 $('.scroll-up').removeClass('active');
             }
-            console.log(scrollY);
         });
 })
+
