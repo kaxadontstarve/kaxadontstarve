@@ -416,6 +416,9 @@ hr {
     bottom: -60px;
     right: 40px;
   }
+  .menu__lang.none {
+    display: none;
+  }
   .menu.active {
     height: 100%;
     max-height: 100%;

@@ -11,14 +11,15 @@ $(document).ready(function () {
         if (viewport_width < 500) {
             $('body').removeClass('lock');
             $('.container').removeClass('paddingNone');
+            $('.menu__lang').addClass('none');
         }
     });
     $('.menu__point-burger').click(function () {
         $('.menu').addClass('active');
         $('.menu__point-burger').addClass('active');
         if (viewport_width < 500) {
-
             $('body').addClass('lock');
+            $('.menu__lang').removeClass('none');
 
         }
     });
@@ -29,6 +30,7 @@ $(document).ready(function () {
                 $('.menu').removeClass('active');
                 $('body').removeClass('lock');
                 $('.container').removeClass('paddingNone');
+                $('.menu__lang').addClass('none');
             }
         });
     }
