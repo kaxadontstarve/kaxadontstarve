@@ -154,8 +154,8 @@ body.lock {
 
 hr {
   max-width: 943px;
-  height: 0px;
-  border: 1px solid #828282;
+  height: 1px;
+  background-color: #828282;
   -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
           transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -199,14 +199,14 @@ hr {
 }
 
 .header__text {
-  font-weight: 700;
-  color: #828282;
+  font-weight: 400;
+  color: #000;
   margin: 0px 0px 10px -90px;
   font-size: 18px;
 }
 
 .header__lang {
-  font-weight: 700;
+  font-weight: 900;
   color: #828282;
   margin: 0px 0px 10px 0px;
   -webkit-writing-mode: vertical-rl;
@@ -406,7 +406,7 @@ hr {
   }
   .menu__lang {
     display: block;
-    font-weight: 700;
+    font-weight: 900;
     color: #828282;
     position: absolute;
     -webkit-writing-mode: vertical-rl;
@@ -415,9 +415,12 @@ hr {
     font-size: 34px;
     bottom: -60px;
     right: 40px;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
   }
   .menu__lang.none {
-    display: none;
+    opacity: 0;
   }
   .menu.active {
     height: 100%;
@@ -478,6 +481,10 @@ hr {
 .about__title {
   margin: 0px 0px 18px 0px;
   line-height: 42px;
+}
+
+.about__text-block {
+  font-size: 18px;
 }
 
 .about__text-paragraph {
@@ -552,13 +559,13 @@ hr {
   margin: 10px 0px 30px 0px;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
   .skills__item {
     margin: 10px 20px 30px 0px;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .skills__item {
     margin: 10px 20px 30px 0px;
   }
@@ -571,7 +578,7 @@ hr {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .skills__items {
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
     -ms-grid-columns: 1fr;
@@ -602,9 +609,9 @@ hr {
 }
 
 .skills__item-raiting p {
-  margin: 0px 8px 0px 0px;
-  height: 25px;
-  width: 25px;
+  margin: 0px 18px 0px 0px;
+  height: 26px;
+  width: 26px;
   background: url("../imgs/skills/Star.svg") 0 0/26px 26px repeat-x;
 }
 
