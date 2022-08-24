@@ -111,6 +111,12 @@ hr {
   margin: 150px auto;
 }
 
+@media (max-width: 767px) {
+  hr {
+    margin: 70px auto;
+  }
+}
+
 .wrapper {
   border: 1px solid #000;
   display: -webkit-box;
@@ -396,7 +402,13 @@ hr {
 
 @media (max-width: 1281px) {
   .block-1 {
-    margin: 5vh 0 0 0;
+    margin: 10vh 0 0 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .block-1 {
+    margin: 15vh 0 0 0;
   }
 }
 
@@ -408,19 +420,19 @@ hr {
 
 @media (max-width: 667px) {
   .block-1 {
-    margin: 45vh 0 0 0;
+    margin: 35vh 0 0 0;
   }
 }
 
 @media (max-width: 550px) {
   .block-1 {
-    margin: 60vh 0 0 0;
+    margin: 50vh 0 0 0;
   }
 }
 
 @media (max-width: 380px) {
   .block-1 {
-    margin: 90vh 0 0 0;
+    margin: 80vh 0 0 0;
   }
 }
 
