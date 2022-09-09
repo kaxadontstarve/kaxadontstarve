@@ -109,6 +109,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%
 }
 
 .title {
@@ -123,7 +124,12 @@ body {
 
 .links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
+
+
 
 .links a {
     margin: 0 40px 20px 0;
@@ -147,4 +153,10 @@ body {
 
 .links a:last-child {
     margin: 0 0px 20px 0;
+}
+
+@media(max-width:679px) {
+    .links a:last-child {
+        margin: 0 40px 20px 0;
+    }
 }
