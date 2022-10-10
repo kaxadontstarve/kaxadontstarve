@@ -24,8 +24,8 @@
 
 @media screen and (max-width: 700px), (max-height: 500px) {
   .radio__wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -35,7 +35,8 @@
 
 .player {
   background: #eef3f7;
-  width: 410px;
+  width: 100%;
+  max-width: 450px;
   min-height: 480px;
   -webkit-box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
           box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
@@ -45,12 +46,13 @@
 
 @media screen and (max-width: 576px), (max-height: 500px) {
   .player {
-    width: 95%;
+    width: 100%;
     padding: 20px;
     margin-top: 75px;
     min-height: initial;
     padding-bottom: 30px;
-    max-width: 400px;
+    max-width: 100%;
+    margin: 75px auto 0 auto;
   }
 }
 
@@ -67,8 +69,8 @@
 
 @media screen and (max-width: 576px), (max-height: 500px) {
   .player__top {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -88,8 +90,8 @@
   .player-cover {
     margin-top: -70px;
     margin-bottom: 25px;
-    width: 290px;
-    height: 230px;
+    width: 190px;
+    height: 250px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -173,15 +175,8 @@
 
 @media screen and (max-width: 576px), (max-height: 500px) {
   .player-controls {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding-left: 0;
-    width: 100%;
-    -webkit-box-flex: unset;
-        -ms-flex: unset;
-            flex: unset;
+    padding: 0;
+    margin-right: 30px;
   }
 }
 
@@ -211,12 +206,11 @@
   .player-controls__item {
     font-size: 26px;
     padding: 5px;
-    margin-right: 10px;
     color: #acb8cc;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
-    margin-bottom: 0;
+    width: 30px;
+    height: 30px;
+    margin-left: 0px;
   }
 }
 
@@ -280,8 +274,8 @@
 
 @media screen and (max-width: 576px), (max-height: 500px) {
   .player-controls__item.-xl {
-    margin-left: auto;
-    font-size: 75px;
+    margin-left: 0;
+    font-size: 55px;
     margin-right: 0;
   }
 }
@@ -368,7 +362,7 @@
 
 @media screen and (max-width: 576px), (max-height: 500px) {
   .album-info {
-    padding-right: 30px;
+    padding-right: 20px;
   }
 }
 
@@ -381,7 +375,7 @@
 
 @media screen and (max-width: 576px), (max-height: 500px) {
   .album-info__name {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 9px;
   }
 }
@@ -396,7 +390,7 @@
 
 @media screen and (max-width: 576px), (max-height: 500px) {
   .album-info__track {
-    font-size: 18px;
+    font-size: 16px;
     min-height: 50px;
   }
 }

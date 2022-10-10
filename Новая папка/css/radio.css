@@ -12,7 +12,7 @@
 }
 
 .radio__radio {
-  max-width: 736px;
+  max-width: 850px;
   width: 100%;
 }
 
@@ -61,8 +61,22 @@
 }
 
 @media (max-width: 768px) {
+  .radio__text-block {
+    margin: 60px 0 0 0;
+  }
   .radio__title {
     font-size: 28px;
     max-width: 291px;
+  }
+  .radio__radio {
+    max-width: 410px;
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
