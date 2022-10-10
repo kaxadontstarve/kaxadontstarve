@@ -22,7 +22,7 @@ new Swiper('', {
     },
 });
 
-$('.menu').click(function(){
+$('.menu__body').click(function(){
 $(".menu__list").toggleClass('active');
     $("body").toggleClass('lock');
 
