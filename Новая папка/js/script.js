@@ -27,6 +27,7 @@ $(document).ready(function () {
         $("body").toggleClass('lock');
 
     });
+    /*
     $('.about-us__video-img').click(function () {
         $(".about-us__video-img").addClass('active');
 
@@ -39,7 +40,7 @@ $(document).ready(function () {
 
 
     });
-
+*/
 
 
 
