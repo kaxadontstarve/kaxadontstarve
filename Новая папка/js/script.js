@@ -7,14 +7,18 @@ $(document).ready(function () {
         },
 
         spaceBetween: 30,
-        slidesPerView: 3,
+        slidesPerView: 4,
         breakpoints: {
             300: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            360: {
                 slidesPerView: 1.1,
                 spaceBetween: 10,
             },
             450: {
-                slidesPerView: 1.2,
+                slidesPerView: 1.3,
                 spaceBetween: 10,
             },
             550: {
@@ -70,7 +74,27 @@ $(document).ready(function () {
             }
         },
     });
+    //Swiper
+    new Swiper('.partners__slider-body', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
 
+        spaceBetween: 11,
+        slidesPerView: 3,
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+            },
+            800: {
+                slidesPerView: 2,
+            },
+            1480: {
+                slidesPerView: 3,
+            }
+        },
+    });
     $('.menu__body').click(function () {
         $(".menu__list").toggleClass('active');
         $("body").toggleClass('lock');
