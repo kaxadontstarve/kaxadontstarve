@@ -43,7 +43,7 @@
   max-width: 342px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 540px) {
   .peopleFM__slide {
     max-width: 300px;
   }
@@ -57,7 +57,7 @@
   width: 342px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 540px) {
   .peopleFM__slide_img img {
     max-width: 300px;
   }

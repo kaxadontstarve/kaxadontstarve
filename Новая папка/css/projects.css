@@ -1,11 +1,11 @@
 .projects {
   padding: 480px 0 120px 0;
-  background: url("../imgs/projects/gradient.png") center 800px/2555px 478px no-repeat, url("../imgs/projects/backg.png") 0 0/100% 100% no-repeat;
+  background: url("../imgs/projects/gradient.png") center 800px/2555px 478px no-repeat, url("../imgs/projects/backg.png") 0 0/1900px 100% no-repeat;
 }
 
-@media (max-width: 536px) {
+@media (max-width: 786px) {
   .projects {
-    background: url("../imgs/projects/gradient.png") center 900px/2555px 478px no-repeat, url("../imgs/projects/backg.png") 0 0/100% 100% no-repeat;
+    background: url("../imgs/projects/gradient.png") center 500px/2555px 478px no-repeat, url("../imgs/projects/backg.png") 0 0/1900px 100% no-repeat;
   }
 }
 
@@ -31,4 +31,10 @@
 .projects__slider-scrollbar {
   cursor: pointer;
   background-color: #203239;
+}
+
+@media (max-width: 786px) {
+  .projects {
+    padding: 70px 0 60px 0;
+  }
 }

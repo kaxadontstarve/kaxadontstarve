@@ -572,12 +572,17 @@ body.lock {
 }
 
 .title {
-  font-size: 61px;
+  font-size: 68px;
   font-weight: 400;
   line-height: 107%;
-  font-size: calc(34pxpx + 34px * ((100vw - 320px) / 1600));
   text-transform: uppercase;
   color: #2d2d2d;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 41px;
+  }
 }
 
 .text {
@@ -594,7 +599,25 @@ body.lock {
   min-height: 100%;
   margin: 0 auto;
   overflow: hidden;
-  background: url("../imgs/Star 7.png") center 700px/2483.63px 2483.63px no-repeat, url("../imgs/projects/backg-2.png") -400px 4000px/2335.25px 2335.25px no-repeat;
+  background: url("../imgs/Star 7.png") center 700px/2483.63px 2483.63px no-repeat, url("../imgs/projects/backg-2.png") -400px 4000px/2335.25px 2535.25px no-repeat;
+}
+
+@media (max-width: 1868px) {
+  .wrapper {
+    background: url("../imgs/Star 7.png") center 700px/2483.63px 2483.63px no-repeat, url("../imgs/projects/backg-2.png") -400px 4300px/2335.25px 2535.25px no-repeat;
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    background: url("../imgs/Star 7.png") center 700px/2483.63px 2483.63px no-repeat, url("../imgs/projects/backg-2.png") -400px 4500px/2335.25px 2535.25px no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    background: url("../imgs/Star 7.png") center 700px/2483.63px 2483.63px no-repeat, url("../imgs/projects/backg-2.png") -400px 4600px/2335.25px 2335.25px no-repeat;
+  }
 }
 
 .container {
