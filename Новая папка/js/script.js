@@ -51,8 +51,7 @@ $(document).ready(function () {
     });
     new Swiper('.projects__slider', {
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+
         },
 
         spaceBetween: 30,
@@ -77,8 +76,7 @@ $(document).ready(function () {
     //Swiper
     new Swiper('.partners__slider-body', {
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+
         },
 
         spaceBetween: 11,
