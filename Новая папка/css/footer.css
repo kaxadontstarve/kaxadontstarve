@@ -47,13 +47,14 @@
   font-weight: 400;
   line-height: 140%;
   color: #ffffff;
+  margin: 0 10px 0 0;
 }
 
 .footer__copyandinf {
   display: none;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .footer {
     padding: 200px 123px 47px 123px;
   }
