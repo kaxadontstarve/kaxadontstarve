@@ -1,0 +1,34 @@
+.projects {
+  padding: 480px 0 120px 0;
+  background: url("../imgs/projects/gradient.png") center 800px/2555px 478px no-repeat, url("../imgs/projects/backg.png") 0 0/100% 100% no-repeat;
+}
+
+@media (max-width: 536px) {
+  .projects {
+    background: url("../imgs/projects/gradient.png") center 900px/2555px 478px no-repeat, url("../imgs/projects/backg.png") 0 0/100% 100% no-repeat;
+  }
+}
+
+.projects__title {
+  margin: 0 0 20px 0;
+}
+
+.projects__text {
+  margin: 0 0 100px 0;
+}
+
+.projects__slider {
+  overflow: hidden;
+}
+
+.projects__slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+}
+
+.projects__slider-scrollbar {
+  cursor: pointer;
+  background-color: #203239;
+}

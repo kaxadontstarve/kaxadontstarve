@@ -1,0 +1,120 @@
+.peopleFM {
+  padding: 50px 0 20px 0;
+}
+
+.peopleFM__title {
+  margin: 0 0 20px 0;
+}
+
+.peopleFM__text {
+  margin: 0 0 90px 0;
+}
+
+.peopleFM__slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 0;
+}
+
+.peopleFM__slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+}
+
+.peopleFM__slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 342px;
+}
+
+@media (max-width: 376px) {
+  .peopleFM__slide {
+    max-width: 300px;
+  }
+}
+
+.peopleFM__slide_img {
+  margin: 0 0 20px 0;
+}
+
+.peopleFM__slide_img img {
+  width: 342px;
+}
+
+@media (max-width: 376px) {
+  .peopleFM__slide_img img {
+    max-width: 300px;
+  }
+}
+
+.peopleFM__slide_title {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 120%;
+  max-width: 200px;
+  text-transform: uppercase;
+  color: #8586f2;
+  margin: 0 0 20px 0;
+}
+
+.peopleFM__slide_describe {
+  max-width: 200px;
+  font-size: 17px;
+  line-height: 120%;
+  color: #3f3f3f;
+  margin: 0 0 30px 0;
+}
+
+.peopleFM__slide_social-item {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin: 0 16px 0 0;
+}
+
+.peopleFM__slide_social-item:last-child {
+  margin: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 60%;
+  width: 70px;
+  height: 100px;
+  left: -100px;
+}
+
+.swiper-button-next {
+  left: inherit;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  right: -100px;
+}
+
+@media (max-width: 1900px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    left: inherit;
+    right: 0;
+  }
+}
