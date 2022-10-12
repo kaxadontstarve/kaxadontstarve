@@ -1,12 +1,18 @@
 .projects {
   padding: 480px 0 120px 0;
-  background: url("../imgs/projects/gradient.png") center 800px/2555px 478px no-repeat, url("../imgs/projects/backg.png") 0 0/1900px 100% no-repeat;
+  background: url("../imgs/projects/backg.png") 0 0/1900px 100% no-repeat;
 }
 
 @media (max-width: 786px) {
   .projects {
-    background: url("../imgs/projects/gradient.png") center 500px/2555px 478px no-repeat, url("../imgs/projects/backg.png") 0 0/1900px 100% no-repeat;
+    background: url("../imgs/projects/backg.png") 0 0/1900px 100% no-repeat;
   }
+}
+
+.projects__gradient {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) center 320px/2555px 478px no-repeat;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
 }
 
 .projects__title {
@@ -36,5 +42,41 @@
 @media (max-width: 786px) {
   .projects {
     padding: 70px 0 60px 0;
+  }
+}
+
+.swiper-scrollbar {
+  background-color: #fff;
+  height: 12;
+  margin: 52px 0 0 0;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #203239;
+  height: 12;
+  border-radius: 5px;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 320px;
+  }
+  50% {
+    background-position: 100% 320px;
+  }
+  100% {
+    background-position: 0% 320px;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 320px;
+  }
+  50% {
+    background-position: 100% 320px;
+  }
+  100% {
+    background-position: 0% 320px;
   }
 }

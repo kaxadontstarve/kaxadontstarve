@@ -11,7 +11,7 @@ $(document).ready(function () {
         });
     });
     //menu link has glued by the scrollTo 
-    const menuPoints = document.querySelectorAll('.menu__link[data-goto]');
+    const menuPoints = document.querySelectorAll('.menu__link[data-goto],.menu__link2[data-goto]');
     if (menuPoints.length > 0) {
         menuPoints.forEach(menuPoint => {
             menuPoint.addEventListener("click", (e) => {
@@ -19,6 +19,8 @@ $(document).ready(function () {
                 if (menuPoint.dataset.goto && document.querySelector(menuPoint.dataset.goto)) {
                     const gotoBlock = document.querySelector(menuPoint.dataset.goto);
                     const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.scrollY - 20;
+                    $("body").removeClass('lock');
+                    $(".menu__list").removeClass('active');
 
                     window.scrollTo({
                         top: gotoBlockValue,
@@ -41,5 +43,7 @@ $(document).ready(function () {
             $('.scroll-up').removeClass('active');
         }
     });
+
+
 
 })

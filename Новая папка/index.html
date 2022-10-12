@@ -26,14 +26,14 @@
                     </div>
                     <nav class="header__menu menu">
                         <div class="menu__body">
-                            <span class="menu__burger"></span>
+                            <span class="menu__burger"><span></span></span>
                             <ul class="menu__list">
-                                <li class="menu__link"><a href="#">Радио</a></li>
-                                <li class="menu__link"><a href="#">О компании</a></li>
-                                <li class="menu__link"><a href="#">Люди ФМ</a></li>
-                                <li class="menu__link"><a href="#">Проекты</a></li>
-                                <li class="menu__link"><a href="#">Партнеры</a></li>
-                                <li class="menu__link"><a href="#">Контакты</a></li>
+                                <li ><a href="#" class="menu__link" data-goto=".radio">Радио</a></li>
+                                <li ><a href="#" class="menu__link" data-goto=".about-us">О компании</a></li>
+                                <li ><a href="#" class="menu__link" data-goto=".peopleFM">Люди ФМ</a></li>
+                                <li ><a href="#" class="menu__link" data-goto=".projects">Проекты</a></li>
+                                <li ><a href="#" class="menu__link" data-goto=".partners">Партнеры</a></li>
+                                <li ><a href="#" class="menu__link" data-goto=".contact">Контакты</a></li>
                                 <li class="menu__link">
                                     <div class="header__social">
                                         <a href="#" class="header__social-item">
@@ -91,7 +91,7 @@
             </div>
         </header>
         <main class="main">
-            <div class="about-us">
+            <div class="about-us" id="about-us">
                 <div class="about-us__body container">
                     <div class="about-us__text-block">
                         <div class="about-us__title title">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <div class="radio">
+            <div class="radio" id="radio">
                 <div class="radio__body container">
                     <div class="radio__radio">
                         <div class="radio__wrapper" id="app">
@@ -324,8 +324,10 @@
                     </div>
                 </div>
             </div>
-            <div class="peopleFM">
+            <div class="peopleFM" id="peopleFM">
                 <div class="peopleFM__body container">
+                    <img class="peopleFM__micro" src="imgs/peopleFM/microphone 1.svg" alt="" >
+                    <img class="peopleFM__micro-animate" src="imgs/peopleFM/Ellipse 9.svg" alt="">
                     <div class="peopleFM__title title">ЛЮДИ FM</div>
                     <div class="peopleFM__text text">Высокопрофессиональные специалисты, многие из которых стояли у
                         истоков регионального радиовещания</div>
@@ -439,40 +441,42 @@
                     </div>
                 </div>
             </div>
-            <div class="projects">
-                <div class="projects__body container">
-                    <div class="projects__title title">
-                        Наши проекты
-                    </div>
-                    <div class="projects__text text">
-                        Наши проекты и совместные проекты с другими компаниями
-                    </div>
-                    <div class="projects__slider swiper-container">
-                        <div class="projects__slider-wrapper swiper-wrapper">
-                            <div class="projects__slide swiper-slide">
-                                <img src="imgs/projects/photo-1.svg" alt="">
-                            </div>
-                            <div class="projects__slide swiper-slide">
-                                <img src="imgs/projects/photo-2.svg" alt="">
-                            </div>
-                            <div class="projects__slide swiper-slide">
-                                <img src="imgs/projects/photo-1.svg" alt="">
-                            </div>
-                            <div class="projects__slide swiper-slide">
-                                <img src="imgs/projects/photo-1.svg" alt="">
-                            </div>
-                            <div class="projects__slide swiper-slide">
-                                <img src="imgs/projects/photo-2.svg" alt="">
-                            </div>
-                            <div class="projects__slide swiper-slide">
-                                <img src="imgs/projects/photo-1.svg" alt="">
-                            </div>
+            <div class="projects" id="projects">
+                <div class="projects__gradient">
+                    <div class="projects__body container">
+                        <div class="projects__title title">
+                            Наши проекты
                         </div>
-                        <div class="projects__slider-scrollbar"></div>
+                        <div class="projects__text text">
+                            Наши проекты и совместные проекты с другими компаниями
+                        </div>
+                        <div class="projects__slider swiper-container">
+                            <div class="projects__slider-wrapper swiper-wrapper">
+                                <div class="projects__slide swiper-slide">
+                                    <img src="imgs/projects/photo-1.svg" alt="">
+                                </div>
+                                <div class="projects__slide swiper-slide">
+                                    <img src="imgs/projects/photo-2.svg" alt="">
+                                </div>
+                                <div class="projects__slide swiper-slide">
+                                    <img src="imgs/projects/photo-1.svg" alt="">
+                                </div>
+                                <div class="projects__slide swiper-slide">
+                                    <img src="imgs/projects/photo-1.svg" alt="">
+                                </div>
+                                <div class="projects__slide swiper-slide">
+                                    <img src="imgs/projects/photo-2.svg" alt="">
+                                </div>
+                                <div class="projects__slide swiper-slide">
+                                    <img src="imgs/projects/photo-1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="projects__slider-scrollbar swiper-scrollbar"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="partners">
+            <div class="partners" id="partners">
                 <div class="partners__body container">
                     <div class="partners__title title">Партнёры</div>
                     <div class="partners__text text">
@@ -524,7 +528,7 @@
                     </div>
                 </div>
             </div>
-            <div class="contact">
+            <div class="contact" id="contact">
                 <img class="contact__backg" src="imgs/contact/backg.png" alt="">
                 <div class="contact__body container">
                     <div class="contact__map">
@@ -560,17 +564,30 @@
             </div>
         </main>
         <footer class="footer">
+            <div class="footer__wave" id="wave1"></div>
+            <div class="footer__wave" id="wave2"></div>
+            <div class="footer__wave" id="wave3"></div>
+            <div class="footer__wave" id="wave4"></div>
+            <div class="footer__wave" id="wave5"></div>
+            <div class="footer__wave" id="wave6"></div>
+            <div class="footer__wave" id="wave7"></div>
+            <div class="footer__wave" id="wave8"></div>
+            <div class="footer__wave" id="wave9"></div>
+            <div class="footer__wave" id="wave10"></div>
             <div class="footer__body container">
                 <div class="footer__copyright">All Rights Reserved</div>
                 <div class="footer__navigation">
                     <nav class="footer__menu">
                         <ul class="footer__menu-list">
-                            <li class="footer__menu-link menu__link2">Радио</li>
-                            <li class="footer__menu-link menu__link2">О компании</li>
-                            <li class="footer__menu-link menu__link2">Люди ФМ</li>
-                            <li class="footer__menu-link menu__link2">Проекты</li>
-                            <li class="footer__menu-link menu__link2">Партнеры</li>
-                            <li class="footer__menu-link menu__link2">Контакты</li>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".radio">Радио</a></li>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".about-us">О компании</a>
+                            </li>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".peopleFM">Люди ФМ</a></li>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".projects">Проекты</a></li>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".partners">Партнеры</a>
+                            </li>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".contact">Контакты</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>

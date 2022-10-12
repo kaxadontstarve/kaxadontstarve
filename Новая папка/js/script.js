@@ -1,4 +1,7 @@
+
+
 $(document).ready(function () {
+    const viewport_width = Math.min(document.documentElement.clientWidth, window.innerWidth || 0);
     //Swiper
     new Swiper('.peopleFM__slider', {
         navigation: {
@@ -75,8 +78,9 @@ $(document).ready(function () {
     });
     //Swiper
     new Swiper('.partners__slider-body', {
-        navigation: {
-
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
         },
 
         spaceBetween: 11,
@@ -93,11 +97,15 @@ $(document).ready(function () {
             }
         },
     });
-    $('.menu__body').click(function () {
-        $(".menu__list").toggleClass('active');
-        $("body").toggleClass('lock');
+    if (viewport_width < 1280) {
+        $('.menu__burger').click(function () {
+            $(".menu__list").toggleClass('active');
+            $(".menu__burger span").toggleClass('active');
+            $("body").toggleClass('lock');
 
-    });
+        });
+    }
+
     /*
     $('.about-us__video-img').click(function () {
         $(".about-us__video-img").addClass('active');

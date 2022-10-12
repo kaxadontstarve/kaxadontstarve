@@ -55,6 +55,7 @@
   max-width: 260px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 0 0 11px 0;
 }
 
 @media (max-width: 1480px) {
