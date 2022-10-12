@@ -87,6 +87,8 @@ close.addEventListener("click", e => {
     openTL.reverse()
     rotateTL.reverse()
     $("body").removeClass('lock');
-    $("#video").removeClass('paused-mode ytp-expand-pause-overlay');
-    video.classList.add('paused-mode ytp-expand-pause-overlay');
+    $("#video").removeClass('paused-mode,ytp-expand-pause-overlay');
+    $("#video").paused;
+    $("#video").paused();
+    video.classList.add('paused-mode,ytp-expand-pause-overlay');
 })
