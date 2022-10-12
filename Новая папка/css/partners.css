@@ -176,6 +176,7 @@
   margin: 0 21px 0 0;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
 .swiper-pagination-bullet-active {

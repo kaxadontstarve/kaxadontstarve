@@ -58,7 +58,8 @@ const openTL = new TimelineMax({ paused: true })
     }, 0)
     .to(".play-triangle", 1, {
         scaleX: 1,
-        ease: ExpoScaleEase.config(2, 1, Power2.easeInOut)
+        ease: ExpoScaleEase.config(2, 1, Power2.easeInOut),
+        visibility: "hidden",
     }, 0)
     .to(".play-triangle", 1, {
         rotationY: 0,
@@ -68,17 +69,20 @@ const openTL = new TimelineMax({ paused: true })
         visibility: "visible",
         opacity: 1
     }, .5)
-
-
+rotateTL.to(".play-triangle", 1, {
+    scaleX: 1,
+    ease: ExpoScaleEase.config(2, 1, Power2.easeInOut)
+}, 0)
 const button = document.querySelector(".play-button")
 const backdrop = document.querySelector(".play-backdrop")
 const close = document.querySelector(".play-close")
 
 button.addEventListener("mouseover", () => rotateTL.play())
 button.addEventListener("mouseleave", () => rotateTL.reverse())
-button.addEventListener("click", () => openTL.play())
-backdrop.addEventListener("click", () => openTL.reverse())
+button.addEventListener("click", () => { openTL.play(); $("body").addClass('lock'); })
+backdrop.addEventListener("click", () => { openTL.reverse(); $("body").removeClass('lock') })
 close.addEventListener("click", e => {
     e.stopPropagation()
     openTL.reverse()
+    $("body").removeClass('lock');
 })
