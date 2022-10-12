@@ -28,12 +28,12 @@
                         <div class="menu__body">
                             <span class="menu__burger"><span></span></span>
                             <ul class="menu__list">
-                                <li ><a href="#" class="menu__link" data-goto=".radio">Радио</a></li>
-                                <li ><a href="#" class="menu__link" data-goto=".about-us">О компании</a></li>
-                                <li ><a href="#" class="menu__link" data-goto=".peopleFM">Люди ФМ</a></li>
-                                <li ><a href="#" class="menu__link" data-goto=".projects">Проекты</a></li>
-                                <li ><a href="#" class="menu__link" data-goto=".partners">Партнеры</a></li>
-                                <li ><a href="#" class="menu__link" data-goto=".contact">Контакты</a></li>
+                                <li><a href="#" class="menu__link" data-goto=".radio">Радио</a></li>
+                                <li><a href="#" class="menu__link" data-goto=".about-us">О компании</a></li>
+                                <li><a href="#" class="menu__link" data-goto=".peopleFM">Люди ФМ</a></li>
+                                <li><a href="#" class="menu__link" data-goto=".projects">Проекты</a></li>
+                                <li><a href="#" class="menu__link" data-goto=".partners">Партнеры</a></li>
+                                <li><a href="#" class="menu__link" data-goto=".contact">Контакты</a></li>
                                 <li class="menu__link">
                                     <div class="header__social">
                                         <a href="#" class="header__social-item">
@@ -326,7 +326,7 @@
             </div>
             <div class="peopleFM" id="peopleFM">
                 <div class="peopleFM__body container">
-                    <img class="peopleFM__micro" src="imgs/peopleFM/microphone 1.svg" alt="" >
+                    <img class="peopleFM__micro" src="imgs/peopleFM/microphone 1.svg" alt="">
                     <img class="peopleFM__micro-animate" src="imgs/peopleFM/Ellipse 9.svg" alt="">
                     <div class="peopleFM__title title">ЛЮДИ FM</div>
                     <div class="peopleFM__text text">Высокопрофессиональные специалисты, многие из которых стояли у
@@ -485,9 +485,9 @@
                     <div class="partners__block">
                         <div class="partners__text-block">
                             <div class="partners__text-block-title radio__title">
-                                Найди и слушай своё
+                                Найди и <span>слушай</span> своё
                                 радио в подборках
-                                наших подкастов
+                                <span>наших</span> подкастов
                             </div>
                             <div class="partners__text-block-text text">
                                 <p>
@@ -521,8 +521,20 @@
                                         <img src="imgs/Frame 5.svg" alt="">
                                         <img src="imgs/Frame 8.svg" alt="">
                                     </div>
+                                    <div class="partners__slide swiper-slide">
+                                        <img src="imgs/Frame 6.svg" alt="">
+                                        <img src="imgs/Frame 8.svg" alt="">
+                                    </div>
+                                    <div class="partners__slide swiper-slide">
+                                        <img src="imgs/Frame 5.svg" alt="">
+                                        <img src="imgs/Frame 6.svg" alt="">
+                                    </div>
+                                    <div class="partners__slide swiper-slide">
+                                        <img src="imgs/Frame 5.svg" alt="">
+                                        <img src="imgs/Frame 3.svg" alt="">
+                                    </div>
                                 </div>
-                                <div class="partners__slider-navigation"></div>
+                                <div class="partners__slider-navigation swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
@@ -579,14 +591,20 @@
                 <div class="footer__navigation">
                     <nav class="footer__menu">
                         <ul class="footer__menu-list">
-                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".radio">Радио</a></li>
-                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".about-us">О компании</a>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".radio">Радио</a>
                             </li>
-                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".peopleFM">Люди ФМ</a></li>
-                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".projects">Проекты</a></li>
-                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".partners">Партнеры</a>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".about-us">О
+                                    компании</a>
                             </li>
-                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".contact">Контакты</a>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2" data-goto=".peopleFM">Люди
+                                    ФМ</a></li>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2"
+                                    data-goto=".projects">Проекты</a></li>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2"
+                                    data-goto=".partners">Партнеры</a>
+                            </li>
+                            <li class="footer__menu-link"><a href="#" class="menu__link2"
+                                    data-goto=".contact">Контакты</a>
                             </li>
                         </ul>
                     </nav>
@@ -615,6 +633,7 @@
     </div>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script type="text/javascript" src="js/player.js"></script>
     <script type="text/javascript" src="js/video.js"></script>
     <script type="text/javascript" src="js/gsap.min.js"></script>

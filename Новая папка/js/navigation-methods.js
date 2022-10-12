@@ -21,7 +21,7 @@ $(document).ready(function () {
                     const gotoBlockValue = gotoBlock.getBoundingClientRect().top + window.scrollY - 20;
                     $("body").removeClass('lock');
                     $(".menu__list").removeClass('active');
-
+                    $(".menu__burger span").removeClass('active');
                     window.scrollTo({
                         top: gotoBlockValue,
                         behavior: "smooth",

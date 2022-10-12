@@ -79,20 +79,19 @@ $(document).ready(function () {
     //Swiper
     new Swiper('.partners__slider-body', {
         pagination: {
-            el: '.swiper-pagination',
+            el: ".swiper-pagination",
+            clickable: true,
             type: 'bullets',
         },
-
-        spaceBetween: 11,
-        slidesPerView: 3,
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        resizeObserver: false,
         breakpoints: {
             300: {
-                slidesPerView: 1,
-            },
-            800: {
                 slidesPerView: 2,
             },
-            1480: {
+ 
+            1580: {
                 slidesPerView: 3,
             }
         },

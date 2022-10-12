@@ -139,6 +139,9 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .about-us__video iframe {
+    max-width: 100%;
+  }
   .about-us__title-video {
     display: block;
   }
