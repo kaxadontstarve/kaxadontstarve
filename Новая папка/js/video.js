@@ -84,5 +84,6 @@ backdrop.addEventListener("click", () => { openTL.reverse(); $("body").removeCla
 close.addEventListener("click", e => {
     e.stopPropagation()
     openTL.reverse()
+    rotateTL.reverse()
     $("body").removeClass('lock');
 })

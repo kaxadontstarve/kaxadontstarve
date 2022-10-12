@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-  min-height: 400px;
+  min-height: 330px;
 }
 
 .footer__body {
@@ -9,7 +9,7 @@
   left: 0;
   max-width: 100vw;
   width: 100%;
-  padding: 150px 123px 137px 123px;
+  padding: 150px 123px 107px 123px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,11 +72,11 @@
 .footer__wave {
   z-index: 2;
   position: absolute;
-  top: 0px;
+  top: 120px;
   left: -800px;
   max-width: 3000px;
   min-width: 3000px;
-  height: 100%;
+  height: 370px;
   -o-object-fit: cover;
      object-fit: cover;
   background: url("../imgs/footer/bgfooter-1.png") center 0/3000px 100% no-repeat;
@@ -232,6 +232,12 @@
 }
 
 @media (max-width: 768px) {
+  .footer {
+    min-height: 300px;
+  }
+  .footer__body {
+    padding: 50px 40px 63px 40px;
+  }
   .footer__navigation {
     display: none;
   }
