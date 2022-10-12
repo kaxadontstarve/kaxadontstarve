@@ -76,6 +76,7 @@ rotateTL.to(".play-triangle", 1, {
 const button = document.querySelector(".play-button")
 const backdrop = document.querySelector(".play-backdrop")
 const close = document.querySelector(".play-close")
+const video = document.querySelector(".play-video")
 
 button.addEventListener("mouseover", () => rotateTL.play())
 button.addEventListener("mouseleave", () => rotateTL.reverse())
@@ -86,4 +87,5 @@ close.addEventListener("click", e => {
     openTL.reverse()
     rotateTL.reverse()
     $("body").removeClass('lock');
+    video.paused();
 })

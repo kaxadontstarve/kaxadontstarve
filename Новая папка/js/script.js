@@ -13,42 +13,16 @@ $(document).ready(function () {
         slidesPerView: 4,
         breakpoints: {
             300: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-            360: {
-                slidesPerView: 1.1,
-                spaceBetween: 10,
-            },
-            450: {
-                slidesPerView: 1.3,
-                spaceBetween: 10,
-            },
-            550: {
-                slidesPerView: 1.5,
-                spaceBetween: 10,
-            },
-            650: {
-                slidesPerView: 1.8,
+                slidesPerView: 'auto',
                 spaceBetween: 10,
             },
             700: {
-                slidesPerView: 2,
+                slidesPerView: 'auto',
                 spaceBetween: 15,
             },
-            800: {
-                slidesPerView: 2.3,
-                spaceBetween: 15,
-            },
-            900: {
-                slidesPerView: 2.6,
-                spaceBetween: 15,
-            },
-            1062: {
-                slidesPerView: 3,
-            },
+
             1480: {
-                slidesPerView: 4,
+                slidesPerView: 'auto',
             }
         },
     });
@@ -65,14 +39,14 @@ $(document).ready(function () {
         },
         breakpoints: {
             280: {
-                slidesPerView: 1,
+                slidesPerView: 'auto',
                 spaceBetween: 15,
             },
             950: {
-                slidesPerView: 2,
+                slidesPerView: 'auto',
             },
             1378: {
-                slidesPerView: 3,
+                slidesPerView: 'auto',
             }
         },
     });
@@ -88,11 +62,11 @@ $(document).ready(function () {
         resizeObserver: false,
         breakpoints: {
             300: {
-                slidesPerView: 2,
+                slidesPerView: 'auto',
             },
- 
+
             1580: {
-                slidesPerView: 3,
+                slidesPerView: 'auto',
             }
         },
     });
