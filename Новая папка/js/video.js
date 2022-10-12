@@ -80,15 +80,13 @@ const video = document.querySelector("#video")
 
 button.addEventListener("mouseover", () => rotateTL.play())
 button.addEventListener("mouseleave", () => rotateTL.reverse())
-button.addEventListener("click", () => { openTL.play(); $("body").addClass('lock'); })
-backdrop.addEventListener("click", () => { openTL.reverse(); $("body").removeClass('lock') })
+button.addEventListener("click", () => { openTL.play(); $("body").addClass('lock'); $("#video").remove('diplay-none') })
+backdrop.addEventListener("click", () => { openTL.reverse(); $("body").removeClass('lock'); $("#video").addClass('diplay-none') })
 close.addEventListener("click", e => {
     e.stopPropagation()
     openTL.reverse()
     rotateTL.reverse()
     $("body").removeClass('lock');
-    $("#video").removeClass('paused-mode,ytp-expand-pause-overlay');
-    $("#video").pause();
-    video.pause();
-    video.classList.add('paused-mode,ytp-expand-pause-overlay');
+    $("#video").addClass('diplay-none')
+
 })
