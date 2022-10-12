@@ -1,0 +1,124 @@
+.contact {
+  padding: 60px 0 150px 0;
+  position: relative;
+}
+
+.contact__backg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 1260px;
+  height: 979px;
+}
+
+.contact__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__map {
+  margin: 0 200px 0 0;
+}
+
+.contact__map iframe {
+  height: 960px;
+  width: 600px;
+}
+
+.contact__block {
+  max-width: 100%;
+}
+
+.contact__title {
+  margin: 244px 0 20px 0;
+}
+
+.contact__text {
+  margin: 0 0 136px 0;
+}
+
+.contact__social {
+  margin: 0 0 50px 0;
+}
+
+.contact__inf {
+  margin: 0 0 46px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact__number {
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 65px;
+  text-transform: uppercase;
+  color: #2d2d2d;
+  margin: 0 43px 0 0;
+  white-space: nowrap;
+}
+
+.contact__mail {
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 210%;
+  color: #2d2d2d;
+  white-space: nowrap;
+}
+
+@media (max-width: 1480px) {
+  .contact__map {
+    margin: 0 50px 0 0;
+  }
+  .contact__map iframe {
+    height: 800px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .contact__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__map {
+    margin: 0;
+  }
+  .contact__title {
+    margin: 92px 0 9px 0;
+  }
+  .contact__text {
+    margin: 0 0 47px 0;
+  }
+  .contact__social {
+    margin: 0 0 35px 0;
+  }
+  .contact__text:last-child {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 50px 0 30px 0;
+  }
+  .contact__map iframe {
+    height: 493px;
+    width: 300px;
+  }
+  .contact__number, .contact__mail {
+    font-size: 28px;
+  }
+}
