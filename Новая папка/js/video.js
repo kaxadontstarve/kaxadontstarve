@@ -76,7 +76,7 @@ rotateTL.to(".play-triangle", 1, {
 const button = document.querySelector(".play-button")
 const backdrop = document.querySelector(".play-backdrop")
 const close = document.querySelector(".play-close")
-const video = document.querySelector(".play-video iframe")
+const video = document.querySelector("#video")
 
 button.addEventListener("mouseover", () => rotateTL.play())
 button.addEventListener("mouseleave", () => rotateTL.reverse())
@@ -87,6 +87,6 @@ close.addEventListener("click", e => {
     openTL.reverse()
     rotateTL.reverse()
     $("body").removeClass('lock');
-    $(".play-video iframe").removeClass('paused-mode ytp-expand-pause-overlay');
+    $("#video").removeClass('paused-mode ytp-expand-pause-overlay');
     video.classList.add('paused-mode ytp-expand-pause-overlay');
 })
