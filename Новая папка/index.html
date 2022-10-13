@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/player.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/radio.css">
+    <link rel="stylesheet" href="css/my_uploads.css">
     <link rel="stylesheet" href="css/video.css">
     <link rel="stylesheet" href="css/about-us.css">
     <link rel="stylesheet" href="css/peopleFM.css">
@@ -137,9 +138,12 @@
                                 <div class="play-perspective">
                                     <button class="play-close"></button>
                                     <div class="play-triangle">
-                                        <div class="play-video">
-                                            <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
-                                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <div class="play-video" id="play-video">
+                                            <iframe id="video"
+                                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1&"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -646,6 +650,8 @@
     </div>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+    <script type="text/javascript" src="js/my_uploads.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <script type="text/javascript" src="js/TweenMax.min.js"></script>
     <script type="text/javascript" src="js/partners.js "></script>
