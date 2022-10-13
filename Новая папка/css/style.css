@@ -620,13 +620,13 @@ body.lock {
 
 @media (max-width: 1280px) {
   .wrapper {
-    background: url("../imgs/Star 7.png") center 700px/2483.63px 2483.63px no-repeat, url("../imgs/projects/backg-2.png") -400px 4500px/2335.25px 2535.25px no-repeat;
+    background: url("../imgs/Star 7.png") center 750px/2483.63px 2483.63px no-repeat, url("../imgs/projects/backg-2.png") -400px 4500px/2335.25px 2535.25px no-repeat;
   }
 }
 
 @media (max-width: 768px) {
   .wrapper {
-    background: url("../imgs/Star 7.png") center 700px/2483.63px 2483.63px no-repeat, url("../imgs/projects/backg-2.png") -400px 4600px/2335.25px 1235.25px no-repeat;
+    background: url("../imgs/Star 7.png") center 750px/2483.63px 2483.63px no-repeat, url("../imgs/projects/backg-2.png") -400px 4600px/2335.25px 1235.25px no-repeat;
   }
 }
 
@@ -654,19 +654,19 @@ body.lock {
 
 @media (max-width: 1850px) {
   .main {
-    margin: -260px 0 0 0;
+    margin: -310px 0 0 0;
   }
 }
 
 @media (max-width: 1550px) {
   .main {
-    margin: -270px 0 0 0;
+    margin: -325px 0 0 0;
   }
 }
 
 @media (max-width: 1280px) {
   .main {
-    margin: -150px 0 0 0;
+    margin: -130px 0 0 0;
   }
 }
 
