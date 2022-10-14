@@ -1,0 +1,149 @@
+.play-video {
+  margin: auto;
+  position: relative;
+  z-index: 15;
+}
+
+.play-video body {
+  overflow: hidden;
+}
+
+.play-video iframe {
+  z-index: 12;
+  margin: 0 0 0 10px;
+  max-width: 800px;
+  max-height: 620px;
+  min-width: 800px;
+  min-height: 620px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1280px) {
+  .play-video iframe {
+    max-width: 600px;
+    max-height: 400px;
+    min-width: 600px;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .play-video iframe {
+    max-width: 540px;
+    max-height: 400px;
+    min-width: 540px;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .play-video iframe {
+    max-width: 400px;
+    max-height: 320px;
+    min-width: 400px;
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 468px) {
+  .play-video iframe {
+    max-width: 280px;
+    max-height: 250px;
+    min-width: 280px;
+    min-height: 250px;
+  }
+}
+
+.play-button {
+  width: 152px;
+  height: 152px;
+  position: relative;
+  cursor: pointer;
+}
+
+.play-backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 15;
+}
+
+.play-close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: -30px;
+  bottom: calc(100% + 15px);
+  border: none;
+  outline: none;
+  background: none;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 16;
+}
+
+.play-close::before,
+.play-close::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.play-close::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.play-circles {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.play-perspective {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  left: -230px;
+  top: -125px;
+}
+
+.play-triangle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  cursor: pointer;
+}
