@@ -157,7 +157,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   position: relative;
-  z-index: 4;
+  z-index: 1;
 }
 
 @media screen and (max-width: 576px), (max-height: 500px) {
@@ -174,7 +174,6 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   position: relative;
-  z-index: 2;
   border-radius: 15px;
   z-index: 1;
 }

@@ -84,7 +84,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #161616;
-  z-index: 2;
+  z-index: 12;
   border: 3px #fff solid;
   border-radius: 35px;
 }
