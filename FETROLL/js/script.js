@@ -11,21 +11,29 @@ new Swiper('.reviews__slider-body', {
         dynamicBullets: true,
 
     },
-    effect: 'coverflow',
-    gradCursor: 'true',
     centeredSlides: 'true',
-    loop: "",
-    coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2.5
-        , slideShadows: false,
-    },
-    spaceBetween: -30,
     slidesPerView: 'auto',
-    autoHeight:true,
 
+    braeckpoints: {
+        318: {
+            spaceBetween: 30,
+            centeredSlides: 'false',
+            slidesPerView: 'auto',
+        },
+        768: {
+            spaceBetween: -30,
+            effect: 'coverflow',
+            gradCursor: 'true',
+
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5
+                , slideShadows: false,
+            },
+        }
+    }
 
 
 });
