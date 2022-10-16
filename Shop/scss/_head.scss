@@ -1,0 +1,342 @@
+.head {
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 18px;
+    }
+    &__body a {
+        transition: $transition03;
+    }
+    &__body a:hover {
+        color: $textColorGeneral;
+        transition: $transition03;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 5px 0;
+        border-bottom: #333 solid 1px;
+        font-size: 14px;
+    }
+
+    &__lang {
+        display: flex;
+        align-items: center;
+        color: #333;
+    }
+    &__lang span {
+        background-color: rgba(199, 198, 198, 0.692);
+        display: block;
+        padding: 4px;
+        margin: 0 14px 0px 0px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: $transition03;
+    }
+    &__lang span:hover {
+        transition: $transition03;
+        background-color: rgb(255, 255, 255);
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        color: #333;
+    }
+    &__social a {
+        display: block;
+    }
+    &__social img {
+        width: 30px;
+        height: 30px;
+        margin: 0 0 0 15px;
+        display: block;
+        padding: 4px;
+        @extend %bgItem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: $transition03;
+    }
+    &__social img:hover {
+        transition: $transition03;
+        background-color: rgb(255, 255, 255);
+    }
+    &__block-body {
+        padding: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__navigation a {
+        display: flex;
+    }
+    &__logo {
+        margin: 0 100px 0 0;
+    }
+
+    &__menu {
+    }
+
+    &__block-inform {
+    }
+
+    &__block-row {
+        display: flex;
+        margin: 0 0 5px 0;
+        font-size: 14px;
+    }
+    &__block-row:last-child {
+        display: flex;
+        margin: 0;
+    }
+
+    &__delivery a {
+        margin: 0 20px 0 0;
+        color: $textColorUsual;
+    }
+
+    &__conactAndCompany a {
+        color: $textColorUsual;
+    }
+
+    &__numbers {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 18px;
+        color: #333;
+    }
+    &__numbers a {
+        display: block;
+        margin: 0 30px 10px 0;
+        color: $textColorGeneral;
+        white-space: nowrap;
+    }
+
+    &__ability a {
+        color: $textColorUsual;
+        
+    }
+
+    &__ability img {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px 0 0;
+        transition: $transition03;
+    }
+    &__call {
+        display: flex;
+        align-items: center;
+        margin: 0 0 5px 0;
+    }
+    &__ability a:hover img {
+        transform: matrix(1.2, -0.3, 0.3, 1.2, 0, 0);
+        transition: $transition03;
+    }
+
+    &__touch {
+        display: flex;
+        align-items: center;
+        margin: 0 0 5px 0;
+    }
+
+    &__ordering {
+        display: flex;
+        align-items: center;
+    }
+
+    &__bottom {
+        width: 100vw;
+        background-color: $colorStyle1;
+    }
+
+    &__bottom-body {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        align-items: center;
+        height: 50px;
+    }
+    &__catalog {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $textColorGeneral;
+        align-items: center;
+        display: flex;
+        padding: 10px 5px;
+        position: relative;
+        transition: $transition03;
+        cursor: pointer;
+    }
+    &__catalog:hover {
+        background-color: rgba(255, 255, 255, 0.39);
+        transition: $transition03;
+    }
+    &__catalog.active .icon,
+    &__catalog.active .arrow {
+        transition: $transition03;
+        transform: rotate(180deg);
+    }
+    &__catalog .icon {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 0 10px 0 0;
+        transition: $transition03;
+    }
+    &__catalog .arrow {
+        margin: 0 0 0 30px;
+        width: 10px;
+        height: 10px;
+        display: block;
+        transition: all 0.3s ease 0s;
+    }
+    &__catalog-body {
+        visibility: hidden;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+        background-color: rgb(255, 255, 255);
+        transition: all 0s ease 0s;
+    }
+    &__catalog.active &__catalog-body {
+        transition: all 0s ease 0s;
+        visibility: visible;
+    }
+    &__catalog-link {
+        text-transform: none;
+        box-shadow: 0 0 1px #333;
+        font-size: 15px;
+        padding: 10px 0px 10px 13px;
+        transition: $transition03;
+        display: flex;
+    }
+    &__catalog-link::after {
+        display: block;
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+        background: url("../img/general-page/icon/next.png") center center / 100% 100% no-repeat;
+        transform: rotate(-90deg);
+    }
+    &__catalog-link:hover {
+        background-color: rgba(56, 56, 56, 0.233);
+        transition: $transition03;
+    }
+    &__search {
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 -150px;
+    }
+    &__search button {
+        width: 39px;
+        height: 41px;
+        margin: 0 0 0 2px;
+        background: url("../img/general-page/icon/search.png") center center / 20px 20px no-repeat, rgb(248, 216, 167);
+        cursor: pointer;
+        transition: $transition03;
+    }
+    &__search button img {
+        width: 20px;
+        height: 20px;
+    }
+    &__search button:hover {
+        background: url("../img/general-page/icon/search2.png") center center / 25px 25px no-repeat, rgb(104, 77, 36);
+        transition: $transition03;
+    }
+    input {
+        padding: 10px;
+        font-size: 18px;
+        background-color: rgb(255, 255, 255);
+        width: 500px;
+    }
+    input::placeholder {
+        font-weight: 700;
+        font-size: 18px;
+    }
+    &__basket {
+        display: flex;
+        align-items: center;
+        color: $textColorGeneral;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        padding: 10px 5px;
+        margin: 0 -5px 0 0;
+    }
+    &__basket:hover {
+        background-color: rgba(255, 255, 255, 0.39);
+    }
+    &__basket img.basket {
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 0 10px 0 0;
+        transition: $transition03;
+    }
+    &__basket img.arrow {
+        width: 10px;
+        height: 10px;
+        display: block;
+        margin: 0 0 0 10px;
+        transition: $transition03;
+    }
+    &__basket-body {
+        visibility: hidden;
+        position: absolute;
+        top: 50px;
+        left: -150%;
+        width: 270%;
+        background-color: #fff;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__basket.active &__basket-body {
+        visibility: visible;
+    }
+    &__basket.active img.basket {
+        transition: $transition03;
+        transform: matrix(1.2, 0.5, -0.5, 1.2, 0, 0);
+    }
+    &__basket.active img.arrow {
+        transition: $transition03;
+        transform: rotate(180deg);
+    }
+}
+.menu {
+    &__body {
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        margin: 0 30px 0 0;
+    }
+    &__link a {
+        margin: 0 25px 0 0;
+        color: $textColorUsual;
+        padding: 5px;
+    }
+    &__link a:hover {
+        color: $textColorGeneral;
+    }
+}

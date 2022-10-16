@@ -1,0 +1,9 @@
+.block-1 {
+    width: 100vw;
+    &_body {
+    }
+}
+.block-1 > img {
+    margin: 0 0 0 -10px;
+    max-width: 100%;
+}

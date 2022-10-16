@@ -1,0 +1,84 @@
+@import "nuclear";
+
+$container: 1200px;
+$maxWidth: 1460px;
+$maxWidthFS: 1440;
+
+$colorStyle1: rgb(242, 146, 33);
+$textColorUsual: rgb(122, 122, 122);
+$textColorGeneral: rgb(51, 51, 51);
+$transition03: all 0.3s ease 0s;
+
+%bgItem {
+    background-color: rgba(199, 198, 198, 0.692);
+    color: $textColorGeneral;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidthFS: $maxWidthFS - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthFS}));
+}
+
+@mixin fontSWL($size, $weight, $lineHeight) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineHeight;
+}
+
+html,
+body,
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(122, 122, 122);
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.wrapper {
+    max-width: $maxWidth;
+    padding: 0px 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.container {
+    max-width: $container;
+    margin: 0px auto;
+}
+
+.main {
+}
+.content {
+    padding: 70px 0;
+    display: flex;
+}
+
+@import "_head";
+@import "_header";
+@import "_block-1";
+@import "_brend";
+@import "_products";
+@import "_footer";
+
+.afterForDropdown {
+    position: relative;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.afterForDropdown:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+    transition: all 0.3s ease 0s;
+}
+.afterForDropdown.active::after {
+    transform: scaleY(-1);
+    transition: all 0.3s ease 0s;
+}

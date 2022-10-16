@@ -1,0 +1,49 @@
+.footer {
+    border-top: rgba(51, 51, 51, 0.37) 1px solid;
+    width: 100vw;
+    margin: 0 0 0 -10px;
+    padding: 20px 20px 10px 20px;
+    font-size: 14px;
+    //display: none;
+    &__body {
+        display: flex;
+        
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__links-col {
+        margin: 0 190px 0 0;
+    }
+    &__links-col span {
+        margin: 0 0 30px 0;
+        display: block;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: $textColorGeneral;
+        white-space: nowrap;
+    }
+    &__links-col a {
+        color: rgb(46, 123, 224);
+        display: block;
+        margin: 0 0 15px 0;
+    }
+    &__links-col div {
+        display: block;
+        margin: 0 0 15px 0;
+    }
+    &__map {
+    }
+    &__map iframe {
+        max-width: 400px;
+        height: 250px;
+    }
+    &__copyRight{
+        text-align: left;
+    }
+}
