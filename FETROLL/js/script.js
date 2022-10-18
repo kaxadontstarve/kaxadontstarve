@@ -11,7 +11,7 @@ new Swiper('.reviews__slider-body', {
         dynamicBullets: true,
 
     },
-    centeredSlides: 'true',
+    centeredSlides: true,
     slidesPerView: 'auto',
 
     braeckpoints: {
@@ -19,6 +19,7 @@ new Swiper('.reviews__slider-body', {
             spaceBetween: 30,
             centeredSlides: 'false',
             slidesPerView: 'auto',
+            initialSlide: 3,
         },
         768: {
             spaceBetween: -30,
@@ -78,7 +79,7 @@ $(document).ready(function () {
         $('.contact__agree').toggleClass('active');
         $('.contact__agree').removeClass('error');
     })
-    $('.contact__button').click(function () {
+    $('.contact__button,input-popup').click(function () {
         if (!$('.contact__agree').hasClass('active')) {
             $('.contact__agree').addClass('error');
         }

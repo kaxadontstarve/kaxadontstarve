@@ -9,59 +9,65 @@
 
 <body>
     <div class="wrapper">
-        <header class="head">
-            <div class="head__body container">
-                <div class="head__logo logo">
-                    <a href="#">FETROLL</a>
-                </div>
-                <div class="head__menu menu">
-                    <div class="menu__body">
-                        <div class="menu__burger"><span></span></div>
-                        <ul class="menu__list">
-                            <li class="menu__link"><a href="#" data-goto=".items">Items</a></li>
-                            <li class="menu__link"><a href="#" data-goto=".about">About</a></li>
-                            <li class="menu__link"><a href="#" data-goto=".delivery">Delivery</a></li>
-                            <li class="menu__link"><a href="#" data-goto=".choose">Why us</a></li>
-                            <li class="menu__link"><a href="#" data-goto=".reviews">Reviews</a></li>
-                            <li class="menu__link"><a href="#" data-goto=".faq">FAQ</a></li>
-                            <li class="menu__link"><a href="#" data-goto=".contact">Contacts</a></li>
-                            <div class="menu__lang name">
-                                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">ENG
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item">ENG</li>
-                                    <li class="dropdown-item">RU</li>
+        <header class="header">
+            <div class="header__body container">
+                <div class="head">
+                    <div class="head__body">
+                        <div class="head__logo logo">
+                            <a href="#">FETROLL</a>
+                        </div>
+                        <div class="head__menu menu">
+                            <div class="menu__body">
+                                <div class="menu__burger"><span></span></div>
+                                <ul class="menu__list">
+                                    <li class="menu__link"><a href="#" data-goto=".items">Items</a></li>
+                                    <li class="menu__link"><a href="#" data-goto=".about">About</a></li>
+                                    <li class="menu__link"><a href="#" data-goto=".delivery">Delivery</a></li>
+                                    <li class="menu__link"><a href="#" data-goto=".choose">Why us</a></li>
+                                    <li class="menu__link"><a href="#" data-goto=".reviews">Reviews</a></li>
+                                    <li class="menu__link"><a href="#" data-goto=".faq">FAQ</a></li>
+                                    <li class="menu__link"><a href="#" data-goto=".contact">Contacts</a></li>
+                                    <div class="menu__lang-mob name">
+                                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">ENG
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="dropdown-item">ENG</li>
+                                            <li class="dropdown-item">RU</li>
+                                        </ul>
+                                    </div>
                                 </ul>
+                                <div class="menu__lang name">
+                                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">ENG
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">ENG</li>
+                                        <li class="dropdown-item">RU</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </ul>
+                        </div>
                     </div>
+                </div>
+                <div class="header__title row">
+                    Baby mobiles &
+                    Nursery decor
+                </div>
+                <div class="header__text text row">
+                    Unique cloud baby mobiles and original cloud décor for “You are my sunshine” themed nursery,
+                    created
+                    in Fetroll cozy
+                    home workshop
+                </div>
+                <div class="header__buttons row">
+                    <a class="a" href="items-page/items-page.html"><button
+                            class="header__button-items button-items col-md-3">WATCH ITEMS</button></a>
+                    <button class="header__button-story button-story col-md-3">Go to Etsy store</button>
                 </div>
             </div>
         </header>
         <main class="main">
-            <div class="header">
-                <div class="header__body container">
-                    <div class="header__head"></div>
-                    <div class="header__title row">
-                        Baby mobiles &
-                        Nursery decor
-                    </div>
-                    <div class="header__text text row">
-                        Unique cloud baby mobiles and original cloud décor for “You are my sunshine” themed nursery,
-                        created
-                        in Fetroll cozy
-                        home workshop
-                    </div>
-                    <div class="header__buttons row">
-                        <a class="a" href="items-page/items-page.html"><button
-                                class="header__button-items button-items col-md-3">WATCH ITEMS</button></a>
-                        <button class="header__button-story button-story col-md-3">Go to Etsy store</button>
-                    </div>
-
-                </div>
-
-            </div>
             <img class="header__img" src="img/header/Headerbackground-mob.png" alt="">
             <div class="items" id="items">
                 <div class="items__body container ">
@@ -187,7 +193,7 @@
                             <div class="delivery__icon">
                                 <img src="img/delivery/icon-1.svg" alt="">
                             </div>
-                            <div class="delivery__name name">standard shipping</div>
+                            <div class="delivery__name name delivery__name-standart">standard shipping</div>
                             <div class="delivery__descr text">Standard shipping method, post service, delivery to the
                                 post office</div>
                             <div class="delivery__price">
@@ -327,7 +333,9 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                            What clouds are made of and how to clean them?
+                                            <span class="faq__desc">What clouds are made of and how to clean
+                                                them?</span>
+                                            <span class="faq__mob">What clouds are made of and how...</span>
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse"
@@ -363,7 +371,8 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                             aria-expanded="true" aria-controls="collapseFour">
-                                            What clouds are made of and how to clean them?
+                                            <span class="faq__desc">Can I get my mobile gift-wrapped and packed?</span>
+                                            <span class="faq__mob">Can I get my mobile gift-wrapped...</span>
                                         </button>
                                     </h2>
                                     <div id="collapseFour" class="accordion-collapse collapse "
@@ -392,7 +401,7 @@
                         me your personal data and I will write you as
                         soon as possible.</div>
                     <div class="contact__block row flex-row justify-content-between w-100">
-                        <div class="contact__form col-md-6">
+                        <div class="contact__form col-md-7">
                             <div class="contact__form-input">
                                 <span class="span1">*</span>
                                 <input class="input1" value="My Name is " type="text" required>
@@ -405,7 +414,7 @@
                             </div>
                             <div class="contact__button button-items">CONTACT ME!</div>
                         </div>
-                        <div class="contact__social col-md-6">
+                        <div class="contact__social col-md-5">
                             <div class="contact__social-row">
                                 <div class="contact__social-item">
 
@@ -442,317 +451,20 @@
                 </div>
             </div>
         </main>
-        <div class="Items-Page">
-            <div class="Items-Page__body container">
-                <div class="Items-Page__button-back text Backto">
-                    Back to Main
-                </div>
-                <div class="Items-Page__block row">
-                    <div class="Items-Page__navbar col-md-3 col-lg-3">
-                        <div class="Items-Page__title name">Items</div>
-                        <ul class="Items-Page__filters">
-                            <li class="Items-Page__filter">ALL</li>
-                            <li class="Items-Page__filter">CLOUD THEME
-                                <ul class="Items-Page__subfilters">
-                                    <li class="Items-Page__subfilter">MOBILES</li>
-                                    <li class="Items-Page__subfilter">WALL DECOR</li>
-                                    <li class="Items-Page__subfilter">GARLANDS</li>
-                                </ul>
-                            </li>
-                            <li class="Items-Page__filter">SPACE THEME
-                                <ul class="Items-Page__subfilters">
-                                    <li class="Items-Page__subfilter">MOBILES</li>
-                                    <li class="Items-Page__subfilter">WALL/CEILING DECOR</li>
-                                    <li class="Items-Page__subfilter">TOYS</li>
-                                </ul>
-                            </li>
-                            <li class="Items-Page__filter">EQUIPMENT
-                                <ul class="Items-Page__subfilters">
-                                    <li class="Items-Page__subfilter">CRIB MOBILE ARM</li>
-                                    <li class="Items-Page__subfilter">WALL HOLDER</li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <div class="Items-Page__filters-mob">
-                            <div class="dropdown">
-                                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    All items
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item-up">Action
-                                        <ul class="Items-Page__subfilters">
-                                            <li class="Items-Page__subfilter"><a class="dropdown-item"
-                                                    href="#">Mobiles</a>
-                                            </li>
-                                            <li class="Items-Page__subfilter"><a class="dropdown-item" href="#">Wall
-                                                    decor</a></li>
-                                            <li class="Items-Page__subfilter"><a class="dropdown-item"
-                                                    href="#">Garlands</a>
-                                            </li>
-                                        </ul>
-                                    </li>
 
-                                    <li class="dropdown-item-up">Another action
-                                        <ul class="Items-Page__subfilters">
-                                            <li class="Items-Page__subfilter"><a class="dropdown-item" href="#">
-                                                    Mobiles</a>
-                                            </li>
-                                            <li class="Items-Page__subfilter"><a class="dropdown-item"
-                                                    href="#">Wall/Ceiling
-                                                    decor</a></li>
-                                            <li class="Items-Page__subfilter"><a class="dropdown-item" href="#">TOYS</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-item-up">Something else Here
-                                        <ul class="Items-Page__subfilters">
-                                            <li class="Items-Page__subfilter"><a class="dropdown-item" href="#">Crib
-                                                    mobile
-                                                    arm</a></li>
-                                            <li class="Items-Page__subfilter"><a class="dropdown-item" href="#">Wall
-                                                    holder</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Items-Page__items col-lg-6 col-md-6">
-                        <div>
-                            <div class="Items-Page__item ">
-                                <div class="Items-Page__img">
-                                    <img src="img/item-page/Itempic.png" alt="">
-                                </div>
-                                <div class="Items-Page__text-block">
-                                    <div class="Items-Page__descr text">White cloud mobile bebe for...</div>
-                                    <div class="Items-Page__items-footer">
-                                        <div class="Items-Page__price">$79.00</div>
-                                        <div class="Items-Page__button">WATCH ITEM</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Items-Page__item">
-                                <div class="Items-Page__img">
-                                    <img src="img/item-page/Itempic.png" alt="">
-                                </div>
-                                <div class="Items-Page__text-block">
-                                    <div class="Items-Page__descr text">White cloud mobile bebe for...</div>
-                                    <div class="Items-Page__items-footer">
-                                        <div class="Items-Page__price">$79.00</div>
-                                        <div class="Items-Page__button">WATCH ITEM</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Items-Page__item">
-                                <div class="Items-Page__img">
-                                    <img src="img/item-page/Itempic.png" alt="">
-                                </div>
-                                <div class="Items-Page__text-block">
-                                    <div class="Items-Page__descr text">White cloud mobile bebe for...</div>
-                                    <div class="Items-Page__items-footer">
-                                        <div class="Items-Page__price">$79.00</div>
-                                        <div class="Items-Page__button">WATCH ITEM</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="Items-Page__item">
-                                <div class="Items-Page__img">
-                                    <img src="img/item-page/Itempic.png" alt="">
-                                </div>
-                                <div class="Items-Page__text-block">
-                                    <div class="Items-Page__descr text">White cloud mobile bebe for...</div>
-                                    <div class="Items-Page__items-footer">
-                                        <div class="Items-Page__price">$79.00</div>
-                                        <div class="Items-Page__button">WATCH ITEM</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Items-Page__item">
-                                <div class="Items-Page__img">
-                                    <img src="img/item-page/Itempic.png" alt="">
-                                </div>
-                                <div class="Items-Page__text-block">
-                                    <div class="Items-Page__descr text">White cloud mobile bebe for...</div>
-                                    <div class="Items-Page__items-footer">
-                                        <div class="Items-Page__price">$79.00</div>
-                                        <div class="Items-Page__button">WATCH ITEM</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Items-Page__item">
-                                <div class="Items-Page__img">
-                                    <img src="img/item-page/Itempic.png" alt="">
-                                </div>
-                                <div class="Items-Page__text-block">
-                                    <div class="Items-Page__descr text">White cloud mobile bebe for...</div>
-                                    <div class="Items-Page__items-footer">
-                                        <div class="Items-Page__price">$79.00</div>
-                                        <div class="Items-Page__button">WATCH ITEM</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__body container">
+            <div class="footer__logo logo"><a href="#">FETROLL</a></div>
+            <div class="footer__typography">All rights reserved. 2022</div>
         </div>
-
-        <div class="Item ">
-            <div class="Item__body container">
-                <div class="Item__button-back Backto">Back to All items</div>
-                <div class="Item__block row">
-                    <div class="Item__slider-block col-md-7">
-                        <div class="Item__slider swiper-container">
-                            <div class="Item__wrapper swiper-wrapper">
-                                <div class="Item__slide swiper-slide">
-                                    <div class="Item__img">
-                                        <img src="img/item-page/Itempic.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="Item__slide swiper-slide">
-                                    <div class="Item__img">
-                                        <img src="img/item-page/Itempic.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="Item__slide swiper-slide">
-                                    <div class="Item__img">
-                                        <img src="img/item-page/Itempic.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="Item__slide swiper-slide">
-                                    <div class="Item__img">
-                                        <img src="img/item-page/Itempic.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="Item__slide swiper-slide">
-                                    <div class="Item__img">
-                                        <img src="img/item-page/Itempic.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="Item__slide swiper-slide">
-                                    <div class="Item__img">
-                                        <img src="img/item-page/Itempic.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="Item__slide swiper-slide">
-                                    <div class="Item__img">
-                                        <img src="img/item-page/Itempic.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Item__pagination swiper-pagination2">
-                            </div>
-                            <div class="Item__arrow swiper-button-prev2"></div>
-                            <div class="Item__arrow swiper-button-next2"></div>
-                        </div>
-                        <div class="Item__descr-block">
-                            <div class="Item__descr">
-                                4 weeks
-                                <span>ready to ship in</span>
-                            </div>
-                            <div class="Item__descr">
-                                Latvia
-                                <span>from</span>
-                            </div>
-                            <div class="Item__descr">
-                                $ 8.00
-                                <span>cost to ship</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Item__characters col-md-5">
-                        <div class="Item__name">White cloud baby mobile for “You are my sunshine” themed nursery</div>
-                        <div class="Item__price">$ 79.00</div>
-                        <div class="Item__buttons">
-                            <div class="Item__button-primary buy">BUY ON ETSY</div>
-                            <div class="Item__button-secondary place">PLACE PRE-ORDER</div>
-                        </div>
-                        <div class="Item__title text">Materials</div>
-                        <div class="Item__text text">cotton, wool, plastic beads, cotton threads, cotton beads, wooden
-                            ring,
-                            lace</div>
-                        <div class="Item__title text">Description</div>
-                        <div class="Item__text text">The cloud mobile is made entirely by hand from delicate cotton and
-                            warm
-                            natural wool. This mobile is adorable, soft and
-                            calm. The clouds are like real! Such a mobile will catch the eye not only of the baby, but
-                            of everyone who enters the
-                            room. The clouds mobile is a wonderful gift for a new baby, christening or even a wedding
-                            gift.</div>
-                        <div class="Item__title text">Size L</div>
-                        <div class="Item__text text">
-                            Mobile diameter 25 cm (10 inches)
-                            Cloud size 15 * 10cm (6 * 4 inches)
-                            Sun diameter 12cm (8 inches not including rays)
-                            The mobile includes a hook for attaching the mobile to the ceiling
-                            Wooden crib mobile arm can be purchased separately</div>
-                        <div class="Item__descr-block">
-                            <div class="Item__descr">
-                                4 weeks
-                                <span>ready to ship in</span>
-                            </div>
-                            <div class="Item__descr">
-                                Latvia
-                                <span>from</span>
-                            </div>
-                            <div class="Item__descr">
-                                $ 8.00
-                                <span>cost to ship</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="Item__also ">
-                <div class="Item__also-body container">
-                    <div class="Item__also-name name">You may also like:</div>
-                    <div class="Item__also-block row">
-                        <a class="Item__also-item col-md-4">
-                            <div class="Item__also-img">
-                                <img src="img/item-page/Itempic.png" alt="">
-                            </div>
-                            <div class="Item__also-text-block">
-                                <div class="Item__text text item-name">White cloud mobile bebe for a you are...</div>
-                                <div class="Item__price">$ 79.00</div>
-                            </div>
-                        </a>
-                        <a class="Item__also-item col-md-4">
-                            <div class="Item__also-img">
-                                <img src="img/item-page/Itempic.png" alt="">
-                            </div>
-                            <div class="Item__also-text-block">
-                                <div class="Item__text text item-name">White cloud mobile bebe for a you are...</div>
-                                <div class="Item__price">$ 79.00</div>
-                            </div>
-                        </a>
-                        <a class="Item__also-item col-md-4">
-                            <div class="Item__also-img">
-                                <img src="img/item-page/Itempic.png" alt="">
-                            </div>
-                            <div class="Item__also-text-block">
-                                <div class="Item__text text item-name">White cloud mobile bebe for a you are...</div>
-                                <div class="Item__price">$ 79.00</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="footer__body container">
-                <div class="footer__logo logo"><a href="#">FETROLL</a></div>
-                <div class="footer__typography">All rights reserved. 2022</div>
-            </div>
-        </footer>
-        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="js/navigation-methods.js"></script>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/navigation-methods.js"></script>
 </body>
 
 </html>
