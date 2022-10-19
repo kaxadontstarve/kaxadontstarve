@@ -462,7 +462,7 @@ body.lock {
     width: 320px;
     height: 100%;
     align-items: center;
-    padding: 85px 108px;
+    padding: 145px 0 85px 0;
     transition: all 0.3s ease 0s;
     transform: scaleX(0);
     border-radius: 15px;
@@ -1327,28 +1327,6 @@ body.lock {
   }
 }
 
-main {
-  transition: all 0.5s ease 0s;
-}
-
-main.disabled {
-  transition: all 0.5s ease 0s;
-  transform: scaleY(0);
-  height: 0;
-}
-
-.Items-Page {
-  transform: scaleY(0);
-  transition: all 0.5s ease 0s;
-  height: 0;
-}
-
-.Items-Page.show {
-  height: inherit;
-  transform: scaleY(1);
-  transition: all 0.5s ease 0s;
-}
-
 .Items-Page {
   background: url("../img/items/garlandscloud.png") right -50px/400px 200px no-repeat, url("../img/item-page/Vector.png") right -20px/750px 190px no-repeat;
 }
@@ -1387,6 +1365,12 @@ main.disabled {
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
+@media (max-width: 768px) {
+  .Items-Page__subfilter {
+    width: 190px;
+    text-align: center;
+  }
+}
 .Items-Page__subfilter:before {
   margin: 0 15px 0 0;
   content: "";
@@ -1396,6 +1380,11 @@ main.disabled {
   border-radius: 50%;
   background-color: rgb(25, 106, 123);
   transition: all 0.3s ease 0s;
+}
+@media (max-width: 768px) {
+  .Items-Page__subfilter:before {
+    display: none;
+  }
 }
 .Items-Page__subfilter:hover {
   color: rgb(241, 101, 31);
@@ -1520,7 +1509,7 @@ main.disabled {
 
 @media (max-width: 768px) {
   .Items-Page__body.container {
-    padding: 30px 10px 40px 10px;
+    padding: 0px 10px 40px 10px;
   }
   .Items-Page__navbar {
     display: flex;
@@ -1629,7 +1618,7 @@ main.disabled {
   }
 }
 .Item__body.container {
-  padding: 20px 10px 0px 10px;
+  padding: 0 10px 0px 10px;
 }
 .Item__button-back {
   color: rgb(25, 106, 123);
@@ -2093,19 +2082,42 @@ ul {
 
 .Items-Page__dropdown-toggle {
   font-size: 18px !important;
+  width: 212px;
+}
+
+.Items-Page__dropdown-toggle.show {
+  border-radius: 20px 20px 0px 0px;
 }
 
 .menu__lang .dropdown-menu,
 .menu__lang-mob .dropdown-menu {
   border-radius: 10px;
-  background-color: rgba(51, 51, 51, 0);
+  background-color: rgb(207, 235, 239);
   padding: 0;
 }
 
-.Items-Page .dropdown-menu {
+.Items-Page__filters-mob .dropdown-menu {
   background-color: rgb(255, 255, 255) !important;
   padding: 0;
   font-size: 18px;
+}
+
+.Items-Page .dropdown-item-up {
+  text-align: center;
+  font-weight: 700;
+}
+
+.Items-Page .Items-Page__filters-mob .dropdown-menu.show {
+  border-top: 0;
+  border-radius: 0px 0px 20px 20px;
+  top: -5px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.Items-Page .Items-Page__filters-mob .btn.dropdown-toggle {
+  justify-content: center;
+  color: rgb(25, 106, 123) !important;
 }
 
 .menu__lang .dropdown-menu > .dropdown-item:first-child,
