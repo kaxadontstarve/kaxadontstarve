@@ -305,6 +305,11 @@ body.lock {
   font-family: "MuseoSansCyrl";
   margin: 100px 0 24px 0;
 }
+@media (max-width: 400px) {
+  .header__title {
+    margin: 10px 24px 0 0;
+  }
+}
 .header__text {
   color: rgb(25, 106, 123);
   max-width: 450px;
