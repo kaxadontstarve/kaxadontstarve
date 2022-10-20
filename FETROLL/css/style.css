@@ -1177,6 +1177,7 @@ body.lock {
   text-align: center;
   margin: 0 auto 65px auto;
   max-width: 570px;
+  color: rgb(25, 106, 123);
 }
 @media (max-width: 768px) {
   .faq__text {
